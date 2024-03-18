@@ -8,3 +8,4 @@
    * php-fpm_exporter https://github.com/bakins/php-fpm-exporter
    * nginx_exporter https://github.com/sysulq/nginx-vts-exporter
 4. Собран конфигурационный файл prometheus.yml
+5. Пуш проекта в гитхаб
