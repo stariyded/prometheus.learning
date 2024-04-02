@@ -1,0 +1,17 @@
+[Unit]
+Description=VictoriaMetrics
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=vmetrics
+Group=vmetrics
+ExecStart= /usr/local/bin/victoriametrics/victoria-metrics-prod \
+   -storageDataPath /var/victoriametrics \
+   -retentionPeriod 14d
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
