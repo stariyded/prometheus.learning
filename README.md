@@ -14,3 +14,10 @@ STEP 1
 STEP2
 1. Установлена система долговременного хранения метрик Victoria Metrics (конфиг сервиса victoriametrics.service)
 2. Настроен экспорт метрик на Victoria Metrics (обновлен файл конфига prometheus.yml)
+
+STEP3
+1. Добавлена конфигурация Alertmanager
+   * alertmanager.yml
+   * prometheus.rules.yml
+   * отредактирован prometheus.yml для работы с Alertmanager
+2. Добавлены systemd файлы сервисов
