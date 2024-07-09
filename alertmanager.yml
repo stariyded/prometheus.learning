@@ -19,7 +19,7 @@ receivers:
     telegram_configs: 
     - chat_id: -4277477785
       parse_mode: 'Markdown'  
-      bot_token: '7013610558:AAF65Hytx_YPHn1CsdVh_l_oU8x_n7MBk8Q'
+      bot_token: <bot_token>
       message: "Some text for notify"
 #inhibit_rules:
 #  - source_match:
