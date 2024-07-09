@@ -1,0 +1,13 @@
+groups:
+  - name: prometheus
+    rules:
+    - alert: Prometheus_Down
+      expr: up == 0
+      for: 1m
+      labels:
+         severity: critical
+    - alert: IPAM_Down
+      expr: up{job="blackbox"} == 0
+      for: 0m
+      labels:
+         severity: critical

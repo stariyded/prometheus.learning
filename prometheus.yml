@@ -9,15 +9,15 @@ global:
 # Alertmanager configuration
 alerting:
   alertmanagers:
-    - static_configs:
-        - targets:
-          # - alertmanager:9093
+  - static_configs:
+    - targets:
+      - localhost:9093
 
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 rule_files:
   # - "first_rules.yml"
   # - "second_rules.yml"
-
+  - "prometheus.rules.yml"
 #Remote write metrics to VictoriaMetrics
 remote_write:
   - url: http://192.168.11.225:8428/api/v1/write
