@@ -21,3 +21,10 @@ STEP3
    * prometheus.rules.yml
    * отредактирован prometheus.yml для работы с Alertmanager
 2. Добавлены systemd файлы сервисов
+
+STEP4
+1. Установлена Grafana
+2. Настроены дашборды доступности сервисов и параметрох хостовой системы
+   ![image](https://github.com/user-attachments/assets/e7982845-8679-496c-8a88-0ca970f0dfb8)
+   ![image](https://github.com/user-attachments/assets/7c183314-c69b-47a2-ae29-cd58d17fc764)
+
